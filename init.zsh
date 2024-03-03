@@ -42,7 +42,7 @@ p6df::modules::snowflake::langs() {
 #  Returns:
 #	str - str
 #
-#  Environment:	 P6_SNOWFLAKE_ACCOUNT P6_SNOWFLAKE_USER
+#  Environment:	 P6_SNOWFLAKE_ACCOUNT
 #>
 ######################################################################
 p6df::modules::snowflake::prompt::line() {
@@ -64,7 +64,7 @@ p6df::modules::snowflake::prompt::line() {
 ######################################################################
 p6df::modules::snowflake::vscodes() {
 
-  code --install-extension snowflakecomputing.snowflake
+  code --install-extension snowflake.snowflake-vsc
 
   p6_return_void
 }
@@ -88,4 +88,3 @@ p6df::modules::snowflake::clones() {
 # https://github.com/snowflakedb
 # https://docs.snowflake.com/en/
 # https://
-

@@ -40,6 +40,18 @@
 
 ## Usage
 
+### p6df-snowflake:
+
+#### p6df-snowflake/init.zsh:
+
+- p6df::modules::snowflake::clones()
+- p6df::modules::snowflake::deps()
+- p6df::modules::snowflake::langs()
+- p6df::modules::snowflake::vscodes()
+- str str = p6df::modules::snowflake::prompt::line()
+
+
+
 ## Author
 
 Philip M . Gollucci <pgollucci@p6m7g8.com>
