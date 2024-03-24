@@ -87,4 +87,3 @@ p6df::modules::snowflake::clones() {
 # https://www.snowflake.com/
 # https://github.com/snowflakedb
 # https://docs.snowflake.com/en/
-# https://
