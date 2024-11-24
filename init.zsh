@@ -9,7 +9,7 @@
 p6df::modules::snowflake::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6df-python
-    p6m7g8-dotfiles/p6df-node
+    p6m7g8-dotfiles/p6df-js
   )
 }
 
