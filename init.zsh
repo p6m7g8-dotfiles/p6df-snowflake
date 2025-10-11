@@ -37,11 +37,11 @@ p6df::modules::snowflake::external::brew() {
 p6df::modules::snowflake::langs() {
 
   # Python
-  pip install snowflake-connector-python
-  pip install snowflake-sqlalchemy
-  pip install snowflake-pandas
-  pip install pyarrow
-  pip install snowflake-cli
+  uv add snowflake-connector-python
+  uv add snowflake-sqlalchemy
+  uv add snowflake-pandas
+  uv add pyarrow
+  uv add snowflake-cli
 
   # Node.js
   npm install snowflake-sdk
