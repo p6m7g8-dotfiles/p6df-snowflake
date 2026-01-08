@@ -80,6 +80,7 @@ p6df::modules::snowflake::prompt::line() {
 p6df::modules::snowflake::vscodes() {
 
   code --install-extension snowflake.snowflake-vsc
+  code --install-extension adpyke.vscode-sql-formatter
 
   p6_return_void
 }
