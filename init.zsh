@@ -57,7 +57,7 @@ p6df::modules::snowflake::langs() {
 #  Returns:
 #	str - str
 #
-#  Environment:	 P6_SNOWFLAKE_ACCOUNT
+#  Environment:	 P6_SNOWFLAKE_ACCOUNT P6_SNOWFLAKE_USER
 #>
 ######################################################################
 p6df::modules::snowflake::prompt::mod() {
