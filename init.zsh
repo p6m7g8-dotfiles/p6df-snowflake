@@ -44,7 +44,7 @@ p6df::modules::snowflake::langs() {
   uv add snowflake-cli
 
   # Node.js
-  npm install snowflake-sdk
+  p6_js_npm_global_install snowflake-sdk
 
   p6_return_void
 }
@@ -52,7 +52,7 @@ p6df::modules::snowflake::langs() {
 ######################################################################
 #<
 #
-# Function: str str = p6df::modules::snowflake::prompt::line()
+# Function: str str = p6df::modules::snowflake::prompt::mod()
 #
 #  Returns:
 #	str - str
@@ -60,7 +60,7 @@ p6df::modules::snowflake::langs() {
 #  Environment:	 P6_SNOWFLAKE_ACCOUNT
 #>
 ######################################################################
-p6df::modules::snowflake::prompt::line() {
+p6df::modules::snowflake::prompt::mod() {
 
   local str
   if ! p6_string_blank "$P6_SNOWFLAKE_ACCOUNT" && ! p6_string_blank "$P6_SNOWFLAKE_USER"; then

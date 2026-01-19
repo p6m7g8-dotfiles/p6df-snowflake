@@ -5,8 +5,6 @@
 ## Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges//p6df-snowflake/&style=flat)](https://mergify.io)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](<https://gitpod.io/#https://github.com//p6df-snowflake>)
 
 ## Summary
 
@@ -33,7 +31,7 @@
 - p6df::modules::snowflake::external::brew()
 - p6df::modules::snowflake::langs()
 - p6df::modules::snowflake::vscodes()
-- str str = p6df::modules::snowflake::prompt::line()
+- str str = p6df::modules::snowflake::prompt::mod()
 
 ## Hierarchy
 
