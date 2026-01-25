@@ -22,7 +22,7 @@ p6df::modules::snowflake::deps() {
 ######################################################################
 p6df::modules::snowflake::external::brew() {
 
-  p6df::modules::homebrew::cli::brew::install --cask snowflake-snowsql
+  p6df::core::homebrew::cli::brew::install --cask snowflake-snowsql
 
   p6_return_void
 }
