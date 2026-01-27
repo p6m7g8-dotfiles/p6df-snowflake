@@ -79,8 +79,27 @@ p6df::modules::snowflake::prompt::mod() {
 ######################################################################
 p6df::modules::snowflake::vscodes() {
 
-  code --install-extension snowflake.snowflake-vsc
-  code --install-extension adpyke.vscode-sql-formatter
+  p6df::modules::vscode::extension::install snowflake.snowflake-vsc
+  p6df::modules::vscode::extension::install adpyke.vscode-sql-formatter
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
+# Function: str json = p6df::modules::snowflake::vscodes::config()
+#
+#  Returns:
+#	str - json
+#
+#>
+######################################################################
+p6df::modules::snowflake::vscodes::config() {
+
+  cat <<'EOF'
+  "snowflake.connectionsConfigFile": "$HOME/.snowflake/connections.toml"
+EOF
 
   p6_return_void
 }
