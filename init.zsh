@@ -63,7 +63,7 @@ p6df::modules::snowflake::langs() {
 p6df::modules::snowflake::prompt::mod() {
 
   local str
-  if ! p6_string_blank "$P6_SNOWFLAKE_ACCOUNT" && ! p6_string_blank "$P6_SNOWFLAKE_USER"; then
+  if p6_string_blank_NOT "$P6_SNOWFLAKE_ACCOUNT" && ! p6_string_blank "$P6_SNOWFLAKE_USER"; then
     str="snowflake:\t  a:$P6_SNOWFLAKE_ACCOUNT u:$P6_SNOWFLAKE_USER"
   fi
 
