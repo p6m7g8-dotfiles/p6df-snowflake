@@ -114,7 +114,7 @@ EOF
 ######################################################################
 p6df::modules::snowflake::clones() {
 
-  p6_github_login_clone "snowflakedb" "$P6_DFZ_SRC_FOCUSED_DIR"
+  p6_github_cli_parallel_clone "snowflakedb" "$P6_DFZ_SRC_FOCUSED_DIR"
 
   p6_return_void
 }
