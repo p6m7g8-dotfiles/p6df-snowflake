@@ -88,11 +88,9 @@ p6df::modules::snowflake::vscodes() {
 ######################################################################
 #<
 #
-# Function: str json = p6df::modules::snowflake::vscodes::config()
+# Function: p6df::modules::snowflake::vscodes::config()
 #
-#  Returns:
-#	str - json
-#
+#  Environment:	 HOME
 #>
 ######################################################################
 p6df::modules::snowflake::vscodes::config() {
