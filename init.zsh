@@ -17,11 +17,11 @@ p6df::modules::snowflake::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::snowflake::external::brew()
+# Function: p6df::modules::snowflake::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::snowflake::external::brew() {
+p6df::modules::snowflake::external::brews() {
 
   p6df::core::homebrew::cli::brew::install --cask snowflake-snowsql
 
