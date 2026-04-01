@@ -14,6 +14,9 @@ p6df::modules::snowflake::deps() {
   )
 }
 
+# https://www.snowflake.com/
+# https://github.com/snowflakedb
+# https://docs.snowflake.com/en/
 ######################################################################
 #<
 #
@@ -48,27 +51,6 @@ p6df::modules::snowflake::langs() {
   p6_js_npm_global_install snowflake-sdk
 
   p6_return_void
-}
-
-######################################################################
-#<
-#
-# Function: str str = p6df::modules::snowflake::prompt::mod()
-#
-#  Returns:
-#	str - str
-#
-#  Environment:	 P6_SNOWFLAKE_ACCOUNT P6_SNOWFLAKE_USER
-#>
-######################################################################
-p6df::modules::snowflake::prompt::mod() {
-
-  local str
-  if p6_string_blank_NOT "$P6_SNOWFLAKE_ACCOUNT" && ! p6_string_blank "$P6_SNOWFLAKE_USER"; then
-    str="snowflake:\t  a:$P6_SNOWFLAKE_ACCOUNT u:$P6_SNOWFLAKE_USER"
-  fi
-
-  p6_return_str "$str"
 }
 
 ######################################################################
@@ -118,6 +100,18 @@ p6df::modules::snowflake::clones() {
   p6_return_void
 }
 
-# https://www.snowflake.com/
-# https://github.com/snowflakedb
-# https://docs.snowflake.com/en/
+######################################################################
+#<
+#
+# Function: words snowflake $SNOWFLAKE_ACCOUNT = p6df::modules::snowflake::profile::mod()
+#
+#  Returns:
+#	words - snowflake $SNOWFLAKE_ACCOUNT
+#
+#  Environment:	 SNOWFLAKE_ACCOUNT
+#>
+######################################################################
+p6df::modules::snowflake::profile::mod() {
+
+  p6_return_words 'snowflake' "$"
+}
