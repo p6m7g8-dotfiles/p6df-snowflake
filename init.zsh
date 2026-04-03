@@ -103,15 +103,15 @@ p6df::modules::snowflake::clones() {
 ######################################################################
 #<
 #
-# Function: words snowflake $SNOWFLAKE_ACCOUNT = p6df::modules::snowflake::profile::mod()
+# Function: words snowflake $SNOWFLAKE_ACCOUNT $SNOWFLAKE_DATABASE $SNOWFLAKE_SCHEMA $SNOWFLAKE_WAREHOUSE $SNOWFLAKE_ROLE $SNOWFLAKE_USER $SNOWFLAKE_HOME = p6df::modules::snowflake::profile::mod()
 #
 #  Returns:
-#	words - snowflake $SNOWFLAKE_ACCOUNT
+#	words - snowflake $SNOWFLAKE_ACCOUNT $SNOWFLAKE_DATABASE $SNOWFLAKE_SCHEMA $SNOWFLAKE_WAREHOUSE $SNOWFLAKE_ROLE $SNOWFLAKE_USER $SNOWFLAKE_HOME
 #
-#  Environment:	 SNOWFLAKE_ACCOUNT
+#  Environment:	 SNOWFLAKE_ACCOUNT SNOWFLAKE_DATABASE SNOWFLAKE_SCHEMA SNOWFLAKE_WAREHOUSE SNOWFLAKE_ROLE SNOWFLAKE_USER SNOWFLAKE_HOME
 #>
 ######################################################################
 p6df::modules::snowflake::profile::mod() {
 
-  p6_return_words 'snowflake' "$"
+  p6_return_words 'snowflake' '$SNOWFLAKE_ACCOUNT' '$SNOWFLAKE_DATABASE' '$SNOWFLAKE_SCHEMA' '$SNOWFLAKE_WAREHOUSE' '$SNOWFLAKE_ROLE' '$SNOWFLAKE_USER' '$SNOWFLAKE_HOME'
 }
