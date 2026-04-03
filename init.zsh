@@ -113,5 +113,5 @@ p6df::modules::snowflake::clones() {
 ######################################################################
 p6df::modules::snowflake::profile::mod() {
 
-  p6_return_words 'snowflake' "$"
+  p6_return_words 'snowflake' '$SNOWFLAKE_ACCOUNT' '$SNOWFLAKE_DATABASE' '$SNOWFLAKE_SCHEMA' '$SNOWFLAKE_WAREHOUSE' '$SNOWFLAKE_ROLE' '$SNOWFLAKE_USER' '$SNOWFLAKE_PASSWORD' '$SNOWFLAKE_HOME'
 }
