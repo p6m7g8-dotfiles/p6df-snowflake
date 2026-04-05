@@ -37,11 +37,11 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::snowflake::clones()`
 - `p6df::modules::snowflake::deps()`
-- `p6df::modules::snowflake::external::brew()`
+- `p6df::modules::snowflake::external::brews()`
 - `p6df::modules::snowflake::langs()`
 - `p6df::modules::snowflake::vscodes()`
 - `p6df::modules::snowflake::vscodes::config()`
-- `str str = p6df::modules::snowflake::prompt::mod()`
+- `words snowflake = p6df::modules::snowflake::profile::mod()`
 
 ## Hierarchy
 
